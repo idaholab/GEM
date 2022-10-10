@@ -1,0 +1,1761 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/idaholab/GEM/"
+     xml:base="https://github.com/idaholab/GEM/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/idaholab/GEM/">
+        <owl:versionIRI rdf:resource="https://github.com/idaholab/GEM/0.1"/>
+        <obo:IAO_0000115 xml:lang="en">GEM is a data model that acts as a common base for real-time digital systems such as digital twins.</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Brennan Harris, Idaho National Laboratory</dc:contributor>
+        <dc:contributor xml:lang="en">Christopher Ritter, Idaho National Laboratory</dc:contributor>
+        <dc:contributor xml:lang="en">Jeren Browning, Idaho National Laboratory</dc:contributor>
+        <dc:contributor xml:lang="en">Kaleb Houck, Idaho National Laboratory</dc:contributor>
+        <rdfs:comment xml:lang="en">BSD License Clause, Copyright 2021 Idaho National Laboratory</rdfs:comment>
+        <rdfs:comment>The data model (ontology) makes use of IAO. You can find the IAO project here: https://github.com/information-artifact-ontology/IAO/</rdfs:comment>
+        <rdfs:comment>The data model (ontology) makes use of OWL Time. You can find the OWL Time project here: https://www.w3.org/TR/owl-time/</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data model (ontology) makes use of BFO. You can find the BFO project site at  https://github.com/BFO-ontology/BFO/</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data model (ontology) makes use of LML. You can find LML at http://www.lifecyclemodeling.org/</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:label>creator</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:label>isDefinedBy</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label>seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+        <rdfs:label>List</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#ID -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ID">
+        <rdfs:label>ID</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#IDREF -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#IDREF">
+        <rdfs:label>IDREF</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/idaholab/GEM/containedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/idaholab/GEM/containedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000112>A gear is in a watch.</obo:IAO_0000112>
+        <obo:IAO_0000112>A heart is in a animal.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">an item is contained by a collection</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">containedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/contains -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/idaholab/GEM/contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000112>A animal has a heart.</obo:IAO_0000112>
+        <obo:IAO_0000112>A watch has gears.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a collection that contains other items</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/relates -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/idaholab/GEM/relates">
+        <obo:IAO_0000112>Plant Documentation relates Document Type</obo:IAO_0000112>
+        <obo:IAO_0000115>A generic relationship to be used when other available relationships are insufficient. Can often be used for relationships between entities that have the same LML parent (e.g. artifact, asset).</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label>relates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/specifies -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/idaholab/GEM/specifies">
+        <obo:IAO_0000112>Hot describes the temperature of the metal.</obo:IAO_0000112>
+        <obo:IAO_0000112>Red describes the color of the car.</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes a relationship between a property and the object that bears it.</obo:IAO_0000115>
+        <rdfs:label>specifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000217 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000217">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000218"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf rdf:resource="nuclear:000218"/>
+        <obo:IAO_0000112>Questionnaire decomposed by Survey Item</obo:IAO_0000112>
+        <obo:IAO_0000115>Identifies the children of some entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:comment>Parent child relationship that subsumes every other wording for a parent/child relationship (e.g. part of, composed of, etc.)</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">decomposedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000218 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000218">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="nuclear:000217"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <obo:IAO_0000112>Survey Item decomposes Questionnaire</obo:IAO_0000112>
+        <obo:IAO_0000115>Identifies the parent of this entity.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">decomposes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:000220 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:000220">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112>Control Rod specified by Mass</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes a relationship to some quality using the Characteristic naming convention from LML (specified by).</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">specifiedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/idaholab/GEM/day -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/day">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>day</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/dayOfYear -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/dayOfYear">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>dayOfYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/days -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/days">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>days</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/duration -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/duration">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:label>duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/hour -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/hour">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>hour</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/hours -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/hours">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>hours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/id">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:label>id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/inXSDDate -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/inXSDDate">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:label>inXSDDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/inXSDDateTime -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/inXSDDateTime">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:label>inXSDDateTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/inXSDDateTimeStamp -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/inXSDDateTimeStamp">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:label>inXSDDateTimeStamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/minute -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/minute">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>minute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/minutes -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/minutes">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>minutes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/month -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/month">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>month</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/months -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/months">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>months</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/nominalPosition -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/nominalPosition">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:label>nominalPosition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/numericDuration -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/numericDuration">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>numericDuration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/numericPosition -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/numericPosition">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>numericPosition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/second -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/second">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>second</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/seconds -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/seconds">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>seconds</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/status -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/status">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/tag -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/tag">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:label>tag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/uncertainty -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/uncertainty">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>uncertainty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/week -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/week">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>week</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/weeks -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/weeks">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>weeks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/xsdDateTime -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/xsdDateTime">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:label>xsdDateTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/year -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/year">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/years -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/GEM/years">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:label>years</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000276 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000276">
+        <obo:IAO_0000115>An enumeration is a property that is made up of a range of static, user-defined values.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">enumeration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000410 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000410">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">boolean</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000411 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000411">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">datetime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000412 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000412">
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000413 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000413">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">string</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000414 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000414">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <obo:IAO_0000115>The timestamp at which a measurement was taken.</obo:IAO_0000115>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">measurement date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000428 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000428">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">uri</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000468 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000468">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000590 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000590">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>inch</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>kilogram</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>meter</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>pound</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">measurement unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:000595 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:000595">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">measurement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001198 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001198">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label>unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Juliius Caesar</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An entity is anything that exists or has existed or will exist. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A non-temporal entity [BFO:continuant] is an entity that persists, endures, or continues to exist through time while maintaining its identity. (BFO definition)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">continuant</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;continuant&apos; as NonTemporal Entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">NonTemporalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A temporal entity [BFO:occurrent] is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies. (BFO definition)</obo:IAO_0000115>
+        <obo:IAO_0000116>More simply said,it is an entity that occurs or happens, such as an event or process with a beginning and an end.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">occurrent</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled occurrent as TemporalEntity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">TemporalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a spatial region</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organization or department</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A physical entity [BFO:independent continuant] is a non-temporal entity [BFO:continuant] which is such that there is no entiy c and time t such that the physical entity depends on c at t. (BFO definition)</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An easier way to understand it is that a PhysicalEntity does not require another entity in order to exist and persists throughout time without another relationship.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">independent continuant</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;independent continuant&apos; as InformationEntity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">PhysicalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">the grip of a steering wheel</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the tip of a spear</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the top of a table</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A spatial region is an immaterial entity that is a continuant part of space R as defined relative to some frame R. (BFO definition])</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">SpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <obo:IAO_0000112 xml:lang="en">an infinitely thin plane in space.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a sphere-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A two-dimensional spatial region is a spatial region that is of two dimensions. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">TwoDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">the furnace melts the ore over an hour</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the runner performs a sprint over a minute</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A process is a temporal entity [BFO:occurrent] that has temporal proper parts for some time t, and depends on some material entity at t. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being an author</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An inherent characteristic [BFO:realizable entity] is a characteristic [BFO:specifically dependent continuant] that inheres in some physical entity [BFO:independent continuant] which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (BFO definition)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">realizable entity</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;realizable entity&apos; as InherentCharacteristic.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">InherentCharacteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of a pipe</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of some piece of equipment</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A quality is a charcteristic [BFO:specifically dependent continuant] that, in contrast to roles and dispositions, does not require any further process in order to be realized. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A NonTemporalEntity that is dependent for its existence on one or more PhysicalEntities that serve as its bearer</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">specifically dependent continuant</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;specifically dependent continuant&apos; as Characteristic.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <obo:IAO_0000112 xml:lang="en">an edge of a cube-shaped portion of space.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional spatial region is a line or aggregate of lines stretching from one point in space to another. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">OneDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped region of space</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ThreeDimensionalSpatialRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000112 xml:lang="en">digital artifacts, such as the pdf on your laptop</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information entity [BFO:generically dependent continuant] is a non-temporal entiy [BFO:continuant] that depends on one or more other entities. (BFO definition)</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A key differentiator between this and Characteristic is that an InformationEntity requires another entity for its initial existance but not its continuing existance i.e. the object ceases to exist, the information about it still does.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">generically dependent continuant</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;generically dependent continuant&apos; as InformationEntity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">InformationEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">charging ends when a battery is full</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the race ends at a finish line</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A process boundary is a temporal part of a process that has no proper temporal parts. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ProcessBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material entity is a physical entity that has some portion of matter as a part.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">independent continuant</obo:IAO_0000118>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">MaterialEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000112 xml:lang="en">the boundary of Wales (which moves with the rotation of the Earth)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the hold of a ship</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your nasal passage</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size as their material hosts move or change shape or size.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ImmaterialEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/duration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The runner&apos;s race consists of laps</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">History</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Boundary -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Boundary">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">a mountain&apos;s prominence is measured using the key col sytem where the difference in height to a parent peak</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">some portion of airspace</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the North Pole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the plane separating the Northern and Southern hemispheres</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A ConceptualBoundary is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A continuant fiat boundary is a boundary of some material entity in other words.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">It can also be a boundary of some immaterial entity.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">continuant fiat boundary</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;continuant fiat boundary&apos; as ConceptualBoundary.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ConceptualBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/DataItem -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/DataItem">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112>Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Data</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="https://github.com/information-artifact-ontology"/>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000027</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">DataItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/DataSet -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/DataSet">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/DataItem"/>
+        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000030</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">DataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/DateTimeInterval -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/DateTimeInterval">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/ProperInterval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/xsdDateTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The crisis started 2022-01-01-00:10:15 and ended 2022-01-02-00:01:15.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">DateTimeInterval enables compact representation of an interval corresponding to a single element in a date-time description (i.e. a specified year, month, week, day, hour, minute, second). The property hasDateTimeDescription describes the interval.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:DateTimeInterval</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DateTimeInterval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/DirectiveInformationEntity -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/DirectiveInformationEntity">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">A recipe is an instruction for making food.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Directions are instructions for movement.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize som entity in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We renamed DirectiveInformationEntity to be more clear to users of the ontology by renaming to Instruction.</obo:IAO_0000116>
+        <obo:IAO_0000116>What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000118>DirectiveInformationEntity</obo:IAO_0000118>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000033</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Instruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Disposition -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Disposition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A inherent characteristic which is such that (1) if it ceases to exist, then 
+its bearer is physically changed, and (2) its realization occurs when this bearer is in some 
+special physical circumstances, and (3) this realization occurs in virtue of the bearer’s 
+physical make-up.</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Document -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Document">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000310</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Equipment -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Equipment">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/tag"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A furnance melts ore.</obo:IAO_0000112>
+        <obo:IAO_0000112>The dryer dries clothes.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object that performs a function in a facility.</obo:IAO_0000115>
+        <rdfs:label>Equipment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Figure -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Figure">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">Any picture, diagram or table</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000308</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Figure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Function -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Function">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Disposition"/>
+        <obo:IAO_0000112 xml:lang="en">the function of a hammer to drive in nails</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of a heart pacemaker to regulate the beating of a heart through electricity</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical 
+make-up is something the bearer possesses because it came into being, either through evolution (in 
+the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort.</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/GeneralDateTimeDescription -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/GeneralDateTimeDescription">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalPostion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/day"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/dayOfYear"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/hour"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/minute"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/month"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/second"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/week"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/year"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Description of date and time structured with separate values for the various elements of a calendar-clock system</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:GeneralDateTimeDescription</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DateTimeDescription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/GeneralDurationDescription -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/GeneralDurationDescription">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalDuration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/days"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/hours"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/minutes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/months"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/seconds"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/weeks"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/years"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>1.0 days, 2.5 hours</obo:IAO_0000112>
+        <obo:IAO_0000112>1.2 years, 36 minutes</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Description of temporal extent structured with separate values for the various elements of a calendar-clock system.</obo:IAO_0000115>
+        <obo:IAO_0000116>In the Gregorian calendar the length of the month is not fixed. Therefore, a value like &quot;2.5 months&quot; cannot be exactly compared with a similar duration expressed in terms of weeks or days.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:GeneralDurationDescription</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">DurationDescription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Geometry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Geometry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/DataItem"/>
+        <obo:IAO_0000112 xml:lang="en">Building Information Models (BIM) digital representation of physical and functional characteristics of a facility.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Computer Aided Design (CAD) files can describe 2D or 3D designs.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A geometry is the shape and relative arrangement of the parts of something.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Identifier -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Identifier">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">The victim was identified as patient zero.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a serial number such as &quot;12324X&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a written proper name such as &quot;OBI&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0020000</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/InformationContentEntity -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/InformationContentEntity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000115>All information items that are derived from material entities (i.e. statements that reference material qualities and are factual claims about an entity) fall under the domain of information content entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://github.com/information-artifact-ontology"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">InformationContentEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Instrumentation -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Instrumentation">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/tag"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A barometer measures pressure.</obo:IAO_0000112>
+        <obo:IAO_0000112>A voltmeter measure voltage in a object.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object that captures a Measurement.</obo:IAO_0000115>
+        <rdfs:label>Instrumentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Interval -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Interval">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalInstance"/>
+        <obo:IAO_0000112 xml:lang="en">From beginning to end.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal instance with an extent or duration.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://www.w3.org/TR/owl-time/#time:Interval"/>
+        <rdfs:label xml:lang="en">Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/MeasurementEntry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/MeasurementEntry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/ValueEntry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000412"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The voltage of the adapter was 120 volts at 2022-01-01 00:10:15.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement is a Value with the following relationships: a double value, a TemporalInstance relationship, a capturing MaterialEntity, a Quality and finally a unit.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A measurement only has one unit. A translation by its nature creates a new measurement with a new unit.</obo:IAO_0000116>
+        <dc:creator xml:lang="en">Idaho National Laboratory</dc:creator>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Object -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">atom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">cell</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">planet</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An object is a material entity that is of a type that serves as a unit in the structure of reality.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Objects are often referred to also as ‘grains’, and are associated with specific ‘levels of granularity’</obo:IAO_0000116>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ObjectAggregate -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ObjectAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">a collection of cells in a blood biobank.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a symphony orchestra</obo:IAO_0000112>
+        <obo:IAO_0000115>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ObjectAggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ObjectPart -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ObjectPart">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">the Western hemisphere of the Earth</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the division of the brain into regions</obo:IAO_0000112>
+        <obo:IAO_0000115>An object part is a defined division within an entity.</obo:IAO_0000115>
+        <obo:IAO_0000116>Most examples of fiat object parts are associated with theoretically drawn divisions</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">fiat object part</obo:IAO_0000118>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>ObjectPart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/One-DimensionalConceptualBoundary -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/One-DimensionalConceptualBoundary">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Boundary"/>
+        <obo:IAO_0000112 xml:lang="en">The line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The median sulcus of your tongue.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional conceptual boundary is a continuous conceptual line whose location is defined in relation to some material entity.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">one-dimensional continuant fiat boundary</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;one-dimensional continuant fiat boundary&apos; as OneDimensionalConceptualBoundary.</rdfs:comment>
+        <rdfs:label xml:lang="en">OneDimensionalConceptualBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ProcessProfile -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ProcessProfile">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000112 xml:lang="en">The beating of some person’s heart would reflect the variations in the number of heart beats produced by that person’s heart.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The performance of a piece of music by a pianist reflect the resp. musical bars played by the pianist
+(‘bpm’ = beats/bars per minute).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Process profiles of can be represented by means of a graph in which 
+measures of a certain quality are plotted against time.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">ProcessProfile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ProperInterval -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ProperInterval">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Interval"/>
+        <obo:IAO_0000112 xml:lang="en">The year starts Jan 1st and ends Dec 31st.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An interval with non-zero extent or duration, i.e. for which the value of the beginning and end are different</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:ProperInterval</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ProperInterval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Relation -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Relation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112 xml:lang="en">John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a marriage bond, an instance of requited love, an obligation between one person and another.</obo:IAO_0000112>
+        <obo:IAO_0000115>A quality that exists between and requires at least two entities.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">relational quality</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;relational quality&apos; as Relation.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Role -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000112 xml:lang="en">the author role</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of some equipment in performing a service, such as fire detection</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role is an inherent characteristic [BFO:realizable entity] that exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be and the role is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (BFO definition)</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Site -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Site">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an air traffic control region defined in the airspace above an airport</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/SpatiotemporalRegion -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/SpatiotemporalRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a human life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a process of cellular meiosis.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region is an TemporalEntity that is part of spacetime.</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/bfo.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">SpatiotemporalRegion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Statement -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Statement">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TextualEntity"/>
+        <obo:IAO_0000112 xml:lang="en">A requirement is a statement that captures a need for a system.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A statement is a collection of text meant to capture a complete idea or thought.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/StatusEntry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/StatusEntry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/ValueEntry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/status"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The computer had a status of &apos;offline&apos;.</obo:IAO_0000112>
+        <obo:IAO_0000115>A Status is a DataItem related to a TimeInstance, string containing Value, and an MaterialEntity.</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Idaho National Laboratory</dc:creator>
+        <rdfs:label>Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Symbol -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Symbol">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">A hand wave to mean hello.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">TM for trademark.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a stop sign</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that represents an entity by condensing the information using a substition.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">We have changed IAO&apos;s definition to more clearly separate it from an identifier.</obo:IAO_0000116>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000028</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TemporalDuration -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TemporalDuration">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112>2 hours</obo:IAO_0000112>
+        <obo:IAO_0000112>48 hours</obo:IAO_0000112>
+        <obo:IAO_0000115>Time extent; duration of a time interval separate from its particular start position</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.w3.org/TR/owl-time/#time:TemporalDuration</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TemporalDuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TemporalInstance -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TemporalInstance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112 xml:lang="en">2001 is a specific year</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A TemporalInstance is a temporal entity that reprsents a discrete entity related to a time T that is related to other TemporalInstances.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This represents the idea of TemporalEntity in the OWL Time ontology. TemporalEntity at the BFO level had a much more abstract idea that better incorporated items such as Process. We moved OWL Time&apos;s idea to a lower level.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:TemporalEntity</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TemporalInstance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TemporalPostion -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TemporalPostion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A position on a time-line</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">We have deferred to TemporalPosition in OWL Time vs. TemporalRegion in BFO because we believe it has better descriptive capability.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:TemporalPosition</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TemporalPostion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TemporalReferenceSystem -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TemporalReferenceSystem">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000112>Gregorian calendar</obo:IAO_0000112>
+        <obo:IAO_0000112>UTC reference system</obo:IAO_0000112>
+        <obo:IAO_0000115>A Temporal Reference System provides the rules and definitions to provide a consistent structure to time elements.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://www.opengis.net/def/uom/ISO-8601/0/Gregorian</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TemporalReferenceSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TemporalUnit -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TemporalUnit">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalDuration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/numericDuration"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A standard duration, which provides the scale factor for a time extent, or the granularity or precision for a time position.</obo:IAO_0000115>
+        <obo:IAO_0000116>Gregorian Calendar</obo:IAO_0000116>
+        <obo:IAO_0000116>Martian year</obo:IAO_0000116>
+        <obo:IAO_0000116>Membership of the class TemporalUnit is open, to allow for other temporal units used in some technical applications (e.g. millions of years, Baha&apos;i month).</obo:IAO_0000116>
+        <obo:IAO_0000116>lunar month</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:TemporalUnit</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TemporalUnit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TextualEntity -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TextualEntity">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/InformationContentEntity"/>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Text is a part of a manifestation whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">textual entity</obo:IAO_0000118>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000300</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TimeEntry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TimeEntry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalInstance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/inXSDDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/inXSDDateTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/inXSDDateTimeStamp"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The time of determination for whether Schrodinger&apos;s cat is alive of dead.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal instance with zero extent or duration.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://www.w3.org/TR/owl-time/#time:Interval"/>
+        <rdfs:label xml:lang="en">Instant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TimePosition -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TimePosition">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/TemporalPostion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/nominalPosition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/GEM/numericPosition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.w3.org/TR/owl-time/#time:TimePosition</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TimePosition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/TwoDimensionalConceptualBoundary -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/TwoDimensionalConceptualBoundary">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Boundary"/>
+        <obo:IAO_0000115 xml:lang="en">a two-dimensional conceptual boundary (surface) is a self-connected fiat surface whose location is defined in relation to some material entity.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">two-dimensional continuant fiat boundary</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;two-dimensional continuant fiat boundary&apos; as TwoDimensionalConceptualBoundary.</rdfs:comment>
+        <rdfs:label xml:lang="en">TwoDimensionalConceptualBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/Unit -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/Unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001198"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>unit of measurement such as an inch</obo:IAO_0000112>
+        <obo:IAO_0000112>unit of measurement such as pressure</obo:IAO_0000112>
+        <obo:IAO_0000115>A QuantifiableQuality describes the magnitude of a standardised quantity and used as a factor to express occurring quantities of that property.</obo:IAO_0000115>
+        <rdfs:label>QuantifiableQuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ValueEntry -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ValueEntry">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/DataItem"/>
+        <obo:IAO_0000112 xml:lang="en">the name on the form was John Doe</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A Value is a DataItem used to describe another entity.</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Idaho National Laboratory</dc:creator>
+        <rdfs:label>Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/ZeroDimensionalConceptualBoundary -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/ZeroDimensionalConceptualBoundary">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Boundary"/>
+        <obo:IAO_0000112 xml:lang="en">the geographic North Pole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the point of origin of some spatial coordinate system.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Zero dimension conceptual boundaries are not spatial points. Considering the example &apos;the quadripoint where the boundaries of Colorado, Utah, New Mexico, and Arizona meet&apos; : There are many frames in which that point is zooming through many points in space. Whereas, no matter what the frame, the quadripoint is always in the same relation to the boundaries of Colorado, Utah, New Mexico, and Arizona.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">zero-dimensional continuant fiat boundary</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:comment xml:lang="en">For the purpose of clarity for common user, we have labelled &apos;zero-dimensional continuant fiat boundary&apos; as ZeroDimensionalConceptualBoundary.</rdfs:comment>
+        <rdfs:label xml:lang="en">ZeroDimensionalConceptualBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/a -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/a">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Figure"/>
+        <obo:IAO_0000112 xml:lang="en">A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A figure that expresses one or more propositions</obo:IAO_0000115>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000309</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Diagram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/as -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/as">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/DataSet"/>
+        <obo:IAO_0000112 xml:lang="en">pmid:20604925 - time-lapse live cell microscopy</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">TimeSampledMeasurementDataSet</obo:IAO_0000118>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000584</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">TimeSeriesDataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/b -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/b">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Figure"/>
+        <obo:IAO_0000112 xml:lang="en">The image of the Mona Lisa was captured first in paint but finally in a picture that could be stored on a harddrive.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The infrared camera captured the heat coming off of the pipe.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An image is ultimately capturing what we percieve with sight in the form of a static piece of data.</obo:IAO_0000116>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000101</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/GEM/s -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/GEM/s">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/GEM/Figure"/>
+        <obo:IAO_0000112 xml:lang="en">| T     F
+--+-----
+T   | T     F
+F   |  F    F</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A figure that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">We moved this from where IAO originally had it. Tables are closer to figure in our view than text.</obo:IAO_0000116>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.obolibrary.org/obo/IAO_0000306</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
+        <rdfs:label>backwardCompatibleWith</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
